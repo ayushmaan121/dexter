@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jxA5gw2mkVqwEcvnkIK1/w5mkG7BOWOtTV7Knu0Ch6hWIlaadFHmCV/KNsvql7rxAF16iDqChzsajgWHtjSjaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asaxen51\\Desktop\\Github\\origGithub\\dexter\\dexterAPI\\dexterAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asaxen51\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

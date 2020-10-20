@@ -1,0 +1,9 @@
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.csprojAssemblyReference.cache
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.AssemblyInfoInputs.cache
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.AssemblyInfo.cs
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.RazorTargetAssemblyInfo.cache
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\staticwebassets\dexterAPI.StaticWebAssets.Manifest.cache
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\staticwebassets\dexterAPI.StaticWebAssets.xml
