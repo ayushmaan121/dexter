@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace dexterAPI.Services
 {
-    public class Action: IAction
+   public interface IDexterAction
     {
-        public JsonResult GenerateZip()
-        {
-            return new JsonResult("hi");
-        }
+        public JsonResult GenerateZip();
     }
 }

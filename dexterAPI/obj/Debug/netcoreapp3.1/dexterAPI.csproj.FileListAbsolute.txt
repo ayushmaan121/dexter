@@ -7,3 +7,14 @@ C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreap
 C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.RazorTargetAssemblyInfo.cache
 C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\staticwebassets\dexterAPI.StaticWebAssets.Manifest.cache
 C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\staticwebassets\dexterAPI.StaticWebAssets.xml
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\dexterAPI.exe
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\dexterAPI.deps.json
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\dexterAPI.runtimeconfig.json
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\dexterAPI.runtimeconfig.dev.json
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\dexterAPI.dll
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\bin\Debug\netcoreapp3.1\dexterAPI.pdb
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.csproj.CoreCompileInputs.cache
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.dll
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.pdb
+C:\Users\asaxen51\Desktop\Github\origGithub\dexter\dexterAPI\obj\Debug\netcoreapp3.1\dexterAPI.genruntimeconfig.cache

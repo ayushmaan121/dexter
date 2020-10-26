@@ -9,10 +9,10 @@ namespace dexterAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ActionController : Controller
+    public class DexterActionController : Controller
     {
-        private IAction _action;
-        public ActionController(IAction action)
+        private IDexterAction _action;
+        public DexterActionController(IDexterAction action)
         {
             _action = action;
         }
