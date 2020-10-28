@@ -8,6 +8,9 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AppBodyComponent } from './app-body/app-body.component';
 
+//
+import { MatGridListModule } from '@angular/material/grid-list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,8 @@ import { AppBodyComponent } from './app-body/app-body.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

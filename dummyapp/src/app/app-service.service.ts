@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AppServiceService {
 
+  public orgName = 'Organisation Name';
+  public footerText = 'Org Name - All Right Reserved';
   constructor() { }
 }

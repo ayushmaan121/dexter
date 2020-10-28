@@ -1,1 +1,39 @@
-<p>app-header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #212121;">
+  <img src="./assets/header.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  <span class="mr-1" style="color:white;padding-left: 5px;font-size: 1rem;">{{ appService.orgName}}</span>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <span class="navbar-text">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">
+              Link 1
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">
+              Link 2
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://google.com/">
+              Google
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/">
+              Github
+            </a>
+          </li>
+        </ul>
+      </div>
+    </span>
+  </div>
+</nav>
