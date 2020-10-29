@@ -24,6 +24,8 @@ namespace dexterAPI.Services
             CreateDirectory(parentPath);
             CopyDirectory(frontEndPath, parentPath + frontEndAppName, true);
             CopyDirectory(backEndPath, parentPath + backEndAppName, true);
+            MakeUIFileChanges(parentPath+frontEndAppName);
+            //MakeBackEndFileChanges();
             ZipDirectory(parentPath, resultZipLocation);
 
             return new JsonResult("Zip Generated at Location "+ resultZipLocation);
@@ -73,6 +75,57 @@ namespace dexterAPI.Services
         private void ZipDirectory(string parentDirectory, string zippedFile)
         {
             ZipFile.CreateFromDirectory(parentDirectory, zippedFile);
+        }
+
+        private void MakeUIFileChanges(string folderPath)
+        {
+            DirectoryInfo frontEndFolder = new DirectoryInfo(folderPath);
+            DirectoryInfo[] childFrontEndFolders = frontEndFolder.GetDirectories();
+            FileInfo[] files = frontEndFolder.GetFiles();
+            foreach(FileInfo file in files)
+            {
+                if(file.Name == "app-service.service.ts")
+                {
+                    UpdateFile(file.FullName, "Organijation Name", "Optum");
+                    UpdateFile(file.FullName, "Org Name - All Right Reserved", "Optum");
+                }
+                if (file.Name == "app.module.ts")
+                {
+
+
+                }
+                if (file.Name == "app.component.html")
+                {
+
+                }
+                UpdateFile(file.FullName, "dummyapp", "NewName");
+
+            }
+            foreach (DirectoryInfo subdir in childFrontEndFolders)
+            {
+                MakeUIFileChanges(subdir.FullName);
+                
+            }
+
+        }
+        private void MakeHeaderChanges(string filePath, string headerName)
+        {
+            string text = File.ReadAllText(filePath);
+            text = text.Replace("Organijation Name", headerName);
+            File.WriteAllText(filePath, text);
+
+        }
+        private void MakeFooterChanges(string filePath, string footerText)
+        {
+            string text = File.ReadAllText(filePath);
+            text = text.Replace("Org Name - All Right Reserved", footerText);
+            File.WriteAllText(filePath, text);
+        }
+        private void UpdateFile(string filePath, string placeholderText, string userInput)
+        {
+            string text = File.ReadAllText(filePath);
+            text = text.Replace(placeholderText, userInput);
+            File.WriteAllText(filePath, text);
         }
     }
 }
