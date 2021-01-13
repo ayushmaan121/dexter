@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>BackOffice Systems</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+</head>
+
+<body>
+	<div class="header">
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+	  <div class="container-fluid">
+		<a class="navbar-brand">BOS Favorites</a>
+		<form class="d-flex" action="/action_page.php">
+		  <input class="form-control me-2" id="myInput" type="text" a placeholder="Search.." aria-label="Search">
+		</form>
+	  </div>
+	</nav>
+	</div>
+	
+	<div id="myDIV" class="container-fluid" border>		
+		<div class="row mt-2">
+			<div class="col-lg-12">
+					<nav class="navbar navbar-expand-sm bg-light navbar-light" >
+						<a class="navbar-brand">Frequent Links</a>
+							<ul class="navbar-nav">
+							  <li class="nav-item  ml-2">							
+								<a class="navbar-brand" href="https://www.google.com/" target="_blank">
+								<img src="google.jpg" alt="Logo" style="width:60px;"></a>
+							  </li>
+							  <li class="nav-item  ml-2">							
+								<a class="navbar-brand" href="https://github.optum.com/BOS" target="_blank">
+								<img src="github-logo.png" alt="Logo" style="width:70px;"></a>
+							  </li>
+							  <li class="nav-item  ml-2">
+								<a class="navbar-brand" href="https://jenkins-optum-bos.origin-ctc-core.optum.com/" target="_blank">
+								<img src="jenkins.png" alt="Logo" style="width:70px;"></a>
+							  </li>
+							  <li class="nav-item  ml-2" >
+								<a class="navbar-brand" href="https://sso.rallydev.com/sp/startSSO.ping?PartnerIdpId=uhg.prod.com.int" target="_blank">
+								<img src="rally.png" alt="Logo" style="width:60px;"></a>
+							  </li>							  
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="https://orh.optum.com/" target="_blank" >OSAM Reporting Hub (ORH)</a>
+							  </li>  
+							  <li class="nav-item  ml-2" >
+								<a class="btn btn-info" href="https://new-wiki.optum.com/display/BOS/Back+Office+Support+Home" target="_blank">BOS Wiki</a>
+							  </li>
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="https://ppmi.optum.com/pm/#/timesheets" target="_blank" >PPM Optics (Timsheet)</a>
+							  </li>
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="https://myappsdev.uhc.com/Citrix/StoreFrontDEVWeb/?NFuse_FromLoggedoutPage=1" target="_blank" >Citrix Non-Prod</a>
+							  </li>
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="https://myapps.uhc.com/Citrix/myappsWeb/" target="_blank" >Citrix Prod</a>
+							  </li>
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="http://helpdesk.uhg.com/" target="_blank" >IT Helpdesk</a> 
+							  </li>
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="https://hub.uhg.com/" target="_blank" >Hub</a>
+							  </li>
+							  <li class="nav-item ml-2">
+								<a class="btn btn-info" href="http://wmohub.optum.com/" target="_blank" >WMO Hub</a>
+							  </li>  
+							</ul>
+					</nav>
+				</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-4">
+				<nav id="serviceScheduler" class="navbar navbar-expand-sm bg-dark navbar-dark" >
+					  <a class="navbar-brand">Service Scheduler</a>
+					  <div class="nav navbar-nav navbar-right" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apsed6056.ms.ds.uhc.com/ServiceSchedulerUI/" target="_blank">Dev</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="http://apset4623.ms.ds.uhc.com/ServiceSchedulerUI/" target="_blank">Test</a>
+						  </li>
+						  <li class="nav-item  ml-2" >
+							<a class="btn btn-secondary" href="http://stg-bos-sch.optum.com/ServiceSchedulerUI/" target="_blank">Stage</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-primary" href="http://bos-sch.optum.com/ServiceSchedulerUI/" target="_blank" >Prod</a>
+						  </li>  
+						</ul>
+					  </div>  
+				</nav>
+			</div>			
+			<div class="col-lg-4">
+				<nav id="slm" class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <a class="navbar-brand">SLM</a>
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apsed6056.ms.ds.uhc.com/slm/" target="_blank">Dev</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apset4623.ms.ds.uhc.com/slm" target="_blank">Test</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apses6051.ms.ds.uhc.com/slm" target="_blank">Stage</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-primary" href="http://slm.optum.com/slm" target="_blank">Prod</a>
+					  </li>  
+					</ul>
+				  </div>  
+				</nav>
+			</div>
+			<div class="col-lg-4">
+				<nav id="emailerUI" class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+				  <a class="navbar-brand">Emailer UI</a>
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apsed6059.ms.ds.uhc.com/EmailerUINew/#/EmailerUI" target="_blank">Dev</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href=href="http://apset4625.ms.ds.uhc.com/EmailerUINew/#/EmailerUI" target="_blank">Test</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://stg-bos-int.optum.com/EmailerUINew/#/EmailerUI" target="_blank">Stage</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-primary" href="http://bos-int.optum.com/EmailerUINew/#/EmailerUI" target="_blank">Prod</a>
+					  </li>  
+					</ul>
+				  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2" >
+			<div class="col-lg-4">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+					  <a class="navbar-brand" href="#">Refund Automation</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						   <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apsed6059.ms.ds.uhc.com/RefundAutomation/grid" target="_blank">Dev</a>
+						  </li>
+						   <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apset4625.ms.ds.uhc.com/RefundAutomation/grid" target="_blank">Test</a>
+						  </li>
+						   <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://stg-bos-int.optum.com/RefundAutomation/grid" target="_blank">Stage</a>
+						  </li>
+						  <li class="nav-item  ml-2">							
+						<a class="btn btn-primary" href="http://bos-int.optum.com/RefundAutomation/grid" target="_blank" >Prod</a>
+						  </li>  
+						</ul>
+					  </div>  
+					</nav>
+				</div>			
+			<div class="col-lg-4 .item_name">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <a class="navbar-brand" href="#">IPS</a>
+					
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apved47975.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Dev</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apvet47976.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Test</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apves47981.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Stage</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-primary" href="http://apvep47983.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Prod</a>
+					  </li>  
+					</ul>
+				  </div>  
+				</nav>
+			</div>
+			<div class="col-lg-4 .item_name" >
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+				  <a class="navbar-brand" href="#">Enterprise Now</a>
+					
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://enterprisenow-dev.optum.com/" target="_blank">Dev</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://enterprisenow-test.optum.com/" target="_blank">Test</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://enterprisenow-stage.optum.com/" target="_blank">Stage</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-primary" href="https://enterprisenow.optum.com/" target="_blank">Prod</a>
+					  </li>  
+					</ul>
+				  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2" >
+			<div class="col-lg-4">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+					  <a class="navbar-brand" href="#">OpenAir</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						   <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://sandbox.openair.com/index.pl" target="_blank">Sandbox</a>
+						  </li>
+						   <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apved47975.ms.ds.uhc.com/IPS/OpenAirTestWebApp/OpenAirTestCallTestPage.aspx" target="_blank">API Test Tool</a>
+						  <li class="nav-item  ml-2">							
+						<a class="btn btn-primary" href="https://authgateway3.entiam.uhg.com/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fwww.openair.com%2Fsaml.pl%3Fo%3DB" target="_blank" >Prod</a>
+						  </li>  
+						</ul>
+					  </div>  
+					</nav>
+				</div>			
+			<div class="col-lg-4">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <a class="navbar-brand" href="#">Onyx</a>
+					
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apved47975.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Dev</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apvet47976.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Test</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="http://apves47981.ms.ds.uhc.com/IPS/IpsUi" target="_blank">Stage</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-primary" href="http://10.223.194.224/OES_Win/SecurityAdministration/main.asp" target="_blank">Prod</a>
+					  </li>  
+					</ul>
+				  </div>  
+				</nav>
+			</div>
+			<div class="col-lg-4">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+				  <a class="navbar-brand" href="#">Blank</a>
+					
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="" target="_blank">Dev</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="" target="_blank">Test</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="" target="_blank">Stage</a>
+					  </li>
+					  <li class="nav-item  ml-2">							
+							<a class="btn btn-primary" href="" target="_blank">Prod</a>
+					  </li>  
+					</ul>
+				  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-4">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">NAS Locations</a>
+					
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-secondary" href="\\nasv0404.uhc.com\bos_primary\dev" target="_blank">Dev</a>
+							</li>
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-secondary" href="\\nasv0404.uhc.com\bos_primary\test" target="_blank">Test</a>
+							</li>
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-secondary" href="\\nasv0404.uhc.com\bos_primary\stage" target="_blank">Stage</a>
+							</li>
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-primary" href="file://nasv0404.uhc.com/bos_primary/prod/" target="_blank">Prod</a>
+							</li>
+						</ul>
+					</div>  
+				</nav>
+			</div>
+			<div class="col-lg-8">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">Costpoint</a>
+					
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-secondary" href="https://stg-cpreporting.optum.com/ibmcognos/cgi-bin/cognosisapi.dll" target="_blank">CP Reporting Stage</a>
+							</li>
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-primary" href="https://cpreporting.optum.com/ibmcognos/cgi-bin/cognosisapi.dll/" target="_blank">CP Reporting Prod</a>
+							</li>
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-primary" href="https://costpoint.optum.com/CPWeb/cploginform.htm" target="_blank">Deltek CP Prod</a>
+							</li>
+							<li class="nav-item  ml-2">							
+								<a class="btn btn-primary" href="https://optumtimeexpense.uhc.com/DeltekTC/welcome.msv" target="_blank">Deltek TE Prod</a>
+							</li>
+						</ul>
+					</div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">SLO</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://had.optum.com/home" target="_blank">Health Assessment (HAD)</a>
+						  </li>						  
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://itsmreporting.uhc.com/" target="_blank">ITSM</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://itsmreporting.uhc.com/controlchartnav/avail_charts.aspx" target="_blank">Availability and Incident Management</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://itsmreporting.uhc.com/cicentral/ci_central.aspx" target="_blank">CI Cental</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://optum.service-now.com/warroomboard" target="_blank">War Room Board</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://optum.service-now.com/itss2/itss2?id=itss2_impact_communicator" target="_blank">Impact Communicator</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-secondary" href="http://dataretentionplan.uhg.com/Default.aspx" target="_blank" >Data Retention Plan</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-secondary" href="http://disasterrecovery-sp.optum.com/DRMgmt/DRPlans/ProdPlans/Forms/Folders.aspx" target="_blank" >DR Plans</a>
+						  </li>
+						</ul>
+					  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">IT & Ops Mgmt</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-info" href="https://optum.service-now.com/navpage.do" data-toggle="tooltip" title="Change Requests, Incident/Problem" target="_blank">ServiceNow</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-info" href="https://tech.optum.com/" target="_blank" >Optum Tech Hub</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://heimdall.optum.com/scan-status" target="_blank" data-toggle="tooltip" title="Security Vulnerabilities Dashboard">Heimdall</a>
+						  </li>						  
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://grafana.optum.com/d/k4DwKntMk/slm_prod?orgId=1" target="_blank">Grafana</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://tech360.optum.com/landing" target="_blank">Tech 360</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://is360.uhc.com/" target="_blank">IS360</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://pdut.uhc.com/PDUT/loginpage.html" target="_blank">PDUT</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://oasis.uhc.com/" target="_blank">Oasis</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="http://atmportal.optum.com/" target="_blank">F5</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="http://eco.uhc.com/mui/index.cfm" target="_blank">MUI</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://ecgdash.healthtechnologygroup.com/cockpit/configsearch.do" target="_blank">ECG Cockpit</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://certificateservices.optum.com/VEDAdmin/Login.aspx" target="_blank">Venafi (Certificates)</a>
+						  </li>
+						  <li class="nav-item  ml-2" >
+							<a class="btn btn-info" href="https://adlookup.optum.com/ui/home" target="_blank">AD Lookup</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-info" href="https://vra.ms.ds.uhc.com/SAAS/t/optumprd01/auth/login" target="_blank" >vRealize</a>
+						  </li>						  
+						  <li class="nav-item ml-2">
+							<a class="btn btn-info" href="https://ask.optum.com/applications" target="_blank" >ASK</a>
+						  </li>						  
+						  <li class="nav-item ml-2">
+							<a class="btn btn-info" href="http://orbit-ssrs-prod-int.optum.com/ReportServer/Pages/ReportViewer.aspx?%2fOptum+ET%2fASKReports%2fASK+Application+List" target="_blank" >ASK App List</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-info" href="https://stargate-docs.optum.com/" target="_blank" >Star Gate</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://hub.uhg.com/sites/hub/Optum/Businesses/Optum-Technology/Management/Pages/finance.aspx" target="_blank">Technology Finance</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-info" href="https://hub.uhg.com/sites/hub/Optum/Businesses/Optum-Technology/Management/Documents/Optum%20Technology%202021%20Rate%20Card.xlsx" target="_blank">Technology Rate Card</a>
+						  </li>
+						</ul>
+					  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">Technology Services</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-warning" href="https://secure.uhc.com/" target="_blank" value="raise access requests"  data-toggle="tooltip" title="Raise Access Requests">Secure</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-warning" href="https://aps.uhc.com/APS/default.aspx" target="_blank">Account Provisioning</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-warning" href="https://appstore.uhc.com/" target="_blank">AppStore (Software Request)</a>
+						  </li> 
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-warning" href="https://techlandscape.optum.com/" target="_blank">PADU-Software/Application</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-warning" href="https://tech360.optum.com/padu/hardware" target="_blank">PADU-Hardware</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-warning" href="http://tcmhub.mhars2.optum.com/" target="_blank">UHC TechOps Hub</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-warning" href="http://ogs.optum.com/HAM/Pages/Home.aspx" target="_blank">HAM (Hardware Request - OGS*)</a>
+						  </li>
+						</ul>
+					  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">Optum References</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						  <li class="nav-item ml-2">
+							<a class="btn btn-secondary" href="https://complianceautomation.optum.com/" target="_blank">Compliance Automation (RCA)</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-secondary" href="https://www.optumdeveloper.com/content/odv-optumdev/optum-developer/en.html" target="_blank" data-toggle="tooltip" title="Optum Developer is a One Stop Shop for developer resources">Optum Developer</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://my.visualstudio.com/" target="_blank">My Visual Studio Subscription</a>
+						  </li>
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-secondary" href="https://uitoolkit.optum.com/" target="_blank">Optum UI Toolkit (Angular)</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://hubconnect.uhg.com/groups/ssmo-devops/overview" target="_blank">DevOps</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-secondary" href="https://grafana-play.optum.com/" target="_blank">Grafana Play</a>
+						  </li>
+						  <li class="nav-item ml-2">
+							<a class="btn btn-secondary" href="https://github.optum.com/OPTUMSource"  target="_blank" data-toggle="tooltip" title="A Community of Best Practices and Guidance for Contributing and Consuming InnerSource and Open Source at Optum" >OPTUMSource</a>
+						  </li>
+						</ul>
+					  </div>  
+				</nav>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				  <a class="navbar-brand" href="#">Learning</a>
+					
+					  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+						  <li class="nav-item  ml-2">							
+							<a class="btn btn-danger" href="https://learnsource.uhg.com/" target="_blank">Learnsource</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-danger" href="https://optum.percipio.com/" target="_blank">Optum Percipio</a>
+						  </li>
+						  <li class="nav-item  ml-2">
+							<a class="btn btn-danger" href="https://developer.servicenow.com/dev.do" target="_blank">ServiceNow Learning</a>
+						  </li>
+						</ul>
+					  </div>  
+				</nav>
+			</div>
+		</div>
+	</div>
+    <!-- /.container -->
+    <!-- /.container theme-showcase-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript">
+    </script>
+    <script src="bootstrap.min.js" type="text/javascript">
+    </script>
+	<script>
+		$(document).ready(function(){
+		  $("#myInput").on("keyup", function() {
+			var text = $(this).val().toLowerCase();
+			var items = $(".item_name");
+			items.parent().hide();
+			items.filter(function () {
+			return $(this).text().toLowerCase().indexOf(text) == 0;
+			}).parent().show();
+		});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</body>
+
+</html>
